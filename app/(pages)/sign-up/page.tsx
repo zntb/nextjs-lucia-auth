@@ -1,7 +1,15 @@
-import SignUpForm from '@/components/SignUpForm';
 import Image from 'next/image';
+import SignUpForm from '@/components/SignUpForm';
+// import { validateRequest } from '@/lib/lucia';
+// import { redirect } from 'next/navigation';
 
 export default async function SignUpPage() {
+  // const { user } = await validateRequest();
+
+  // if (user) {
+  //   return redirect('/');
+  // }
+
   return (
     <div className="pt:mt-0 mx-auto flex flex-col items-center justify-center px-6 pt-8 dark:bg-gray-900 md:h-screen">
       <a
@@ -10,9 +18,9 @@ export default async function SignUpPage() {
       >
         <Image
           src="/vercel.svg"
-          alt="Vercel Logo"
           width={100}
           height={24}
+          alt="Vercel Logo"
           className="mr-4 h-11"
         />
       </a>
